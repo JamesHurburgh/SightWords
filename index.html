@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<title>Sight Words</title>
+		<script src="http://responsivevoice.org/responsivevoice/responsivevoice.js"></script>
+    	<script src="./js/jquery-2.2.4.min.js"></script>
+		
+		<script src="js/index.js"> </script>
+	</head>
+	<body onload="initialise();">
+		<div id="fb-root"></div>
+		<nav></nav>
+		<div class="container text-center">
+		</div>	
+		<div id="header">
+			<h1 style="float:left;">Sight Words</h1>
+			<nav>
+				<ul class="nav">
+					<!--<li role="presentation" class="active"><a href="#">Home</a></li>-->
+					<li><select class="form-control" id="setListsSelection"></select></li>
+					<li><select class="form-control" id="voiceselection"></select></li>
+				</ul>
+			</nav>
+		</div>
+		<div id="content">
+			<div id="setListContainer">
+				<h2>Sets</h2>
+				<div id="setList" class="list"></div>
+			</div>
+			<div id="wordListContainer">
+				<h2>Words</h2>
+				<div id="wordList" class="list"></div>
+			</div>
+			<div id="wordContainer" class="container">
+				<h2>Word</h2>
+				<div>
+					<div id="word">-</div>
+					<button class="btn" id="pickRandomWordButton">Random Word</button>
+					<button class="btn" id="sayWordButton">Say Word</button>
+				</div>
+			</div>
+		</div>
+		
+    <footer></footer>
+    <script>
+        $.get("navigation.html", function(data) {
+            $("nav").replaceWith(data);
+        });
+        $.get("footer.html", function(data) {
+            $("footer").replaceWith(data);
+        });
+    </script>
+		<div id="footer">
+			<small>Feedback: <a href="mailto:jameshurburgh@gmail.com">James Hurburgh</a> (jameshurburgh@gmail.com)</small>
+		</div>
+	</body>
+</html>
