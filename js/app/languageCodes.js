@@ -1,7 +1,9 @@
+define([],
+function () {
 // Source: http://www.andiamo.co.uk/resources/iso-language-codes
 
 // Note this list contains only english codes so far as that is currently all I am supporting.
-var languageCodes = [ 
+return [ 
     {"code":"en","language":"English"},
     {"code":"en-au","language":"English (Australia)"},
     {"code":"en-bz","language":"English (Belize)"},
@@ -14,3 +16,4 @@ var languageCodes = [
     {"code":"en-us","language":"English (United States)"},
     {"code":"en-za","language":"English (South Africa)"}
 ];
+});

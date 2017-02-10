@@ -1,4 +1,6 @@
-var setLists = [
+define([],
+function (){
+return [
 {"setListName":"Magic", //From: http://year4c.edublogs.org/files/2014/04/Sight-words-0-800-2cvvp94.pdf
 	"languageCode":"en-au",
 	"description":"",
@@ -162,3 +164,4 @@ var setLists = [
 
 ]},
 ];
+});
